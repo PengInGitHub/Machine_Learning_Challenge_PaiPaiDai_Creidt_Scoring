@@ -44,6 +44,8 @@ Eventually in the last step the results from BBM and DBM_Sub are **blended**. Ou
 Thanks to the prepared data via the first five steps, method of level_one_wrapper, which is Level One Model Fitting in the chart above, is to fit the data via a bunch of algorithms.
 
 7.BBM_DBM.py  
+![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/Misclassification.png
+)
 BBM_DBM reads the results of level_one_wrapper and tells which algorithm is the single best base model (BBM) based on the average AUC via 5 fold CV. Additionally it indicates the base model differs from BBM to the largest scale (DBM) according to the PCC values among all base models. Samples have high positive values in the difference between Ranking_BBM and Ranking_DBM (Ranking_BBM Ranking_DBM) are highly supposed to be misclassified by BBM (normally XGBoost) but more accurately evaluated by DBM (in  general  a  linear  model).  
 
 8.load_train_data.py  
