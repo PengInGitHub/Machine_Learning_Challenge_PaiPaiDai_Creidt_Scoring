@@ -5,7 +5,7 @@ This doc reveals how to implement my strategy for the Machine Learning challenge
 
 In order to replicate and (if possible) improve my solution, firstly you need to execute the given files by their order, the first five docs are individual scripts, you could run them seperately. Next the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
 
-Part I: Data Wrangling
+Part I: Data Wrangling  
 The  chart  provides  an  overview  of data  preparation, which  is  the  task  of  the  first  five  scripts.
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/data_preparation.png)
 
@@ -21,21 +21,25 @@ similar to the operations on numeric variables, the ranking columns are discreti
 levels and frequency of each discretized level is counted. Lastly an XGBoost is conducted
 in order to calculate the **feature importance** of extracted statistical features, several of the
 least  important  features  are  precluded.  
+
 2.Configure.py  
 Configure  sets  up  the  development  environment  for  the  following  files.  
+
 3.Preprocessing.py  
 In the raw data, numerical variables are **log transformed and normalized**, then **dummies** of
 nominal  variables  are  generated.  
+
 4.Statistics_Features.py  
 Statistics_Features is a streamlined version for ppd_solution.py, it could be skipped if
 ppd_solution is successfully executed. In this way, the processed data is made of two parts:
 statistical features from ppd_solution.py and processed numeric and nominal features from
 Preprocessing.py.  
+
 5.Feature_Selection  
 Ahead of modeling, processed data is selected in this section. Features that have low
 variance  or  high  correlation  with  other  features  are  excluded.  
 
-Part II: Machine Learning Pipiline  
+Part II: Machine Learning Pipiline    
 The following files are in charge of modelling. As can be seen from the diagram below,
 modeling consists of three steps: firstly, a couple of **base models** from LR to XGB are used
 to fit the training data. Afterwards in step two, samples that are suspicious to be
