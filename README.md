@@ -51,7 +51,7 @@ compared with the results of a normal stacking model, the one has the highest AU
 hold out  will  be  used  as  final  prediction  to  submit.  
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/modelling.png)
 
-6.run.py  
+6.run.py - level_one_wrapper  
 Thanks to the prepared data via the first five steps, method of level_one_wrapper, which is Level  One  Model  Fitting  in  the  chart  above,  is  to  fit  the  data  via  a  bunch  of  algorithms.
 
 7.BBM_DBM.py  
@@ -67,13 +67,15 @@ to be misclassified by BBM (normally XGBoost) but more accurately evaluated by D
 load_train_data plots the ranking difference of instances between BBM and DBM so as to
 determine  the  subsamples  for  level  two  model  fitting.  
 
-9.run.py  
+9.run.py - level_two_wrapper 
 On the selected samples from the last step, the model DBM_Sub is fitted, which is linear
 model in Level Two Model Fitting. This model gives more accurate evaluations on the
-chosen  data  than  BBM.
-10.level_one_predict.py
-The  models  fitted  in  level_one_wrapper  are  used  to  fit  the  hold out  test.
-11.level_two_predict.py  
+chosen  data  than  BBM.  
+
+10.run.py - level_one_predict.py
+The  models  fitted  in  level_one_wrapper  are  used  to  fit  the  hold out  test.  
+
+11.run.py - level_two_predict.py  
 The  outputs  of  level_one_predict  are  used  as  inputs  to  fit  a  normal  stacking  model. 
 
 12.local_predit_verrify_tune_final.py    
