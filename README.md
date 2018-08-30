@@ -1,11 +1,11 @@
 # Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring
 PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution  
 
-This is my strategy for the Machine Learning Challenge of Credit Risk Assessment of
-PaiPaiDai, which is a leadning online banking platform and a Fintech super star in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
-This document helps others to replicate and improve my solution, firstly it tells the order to execute the given files and next a brief explanation of the objective of
-each  file  is  provided.  To  note,  modeling  is  conducted  in  Python  3.
-The  chart  provides  an  overview  of  data  preparation,which  is  the  task  of  the  first  four  files.
+This doc reveals how to implement my strategy for the Machine Learning challenge in python 3. Specifically this contest asks participants to predict if a user is going to default if he gets credit from PaiPaiDai, which is a leadning online banking platform and a Fintech super star in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
+
+In order to replicate and (if possible) improve my solution, firstly you could execute the given files by their order, the first five docs are individual scripts, you could run them seperately. Next the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
+
+The  chart  provides  an  overview  of  data  preparation,which  is  the  task  of  the  first  five  scripts.
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/data_preparation.png)
 
 1.ppd_solution.py
