@@ -1,10 +1,13 @@
 # Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring
-PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution
+PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution  
+
 This is my strategy for the Machine Learning Challenge of Credit Risk Assessment of
-PaiPaiDai . The excellent solutions of Wepe and TNT_000 are referenced. This document 1 2 3
-introduces the order to execute the given files and a brief explanation of the objective of
+PaiPaiDai, which is a leadning online banking platform and a Fintech super star in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
+This document helps others to replicate and improve my solution, firstly it tells the order to execute the given files and next a brief explanation of the objective of
 each  file  is  provided.  To  note,  modeling  is  conducted  in  Python  3.
 The  chart  provides  an  overview  of  data  preparation,which  is  the  task  of  the  first  four  files.
+![alt text](https://i2.wp.com/beebom.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg?w=640&ssl=1)
+
 1.ppd_solution.py
 ppd_solution.py generates all statistical features extracted from raw data. Firstly, statistical
 features concerning missing values: the count of missing value per user, ranking of the
@@ -19,8 +22,8 @@ in order to calculate the feature importance of extracted statistical features, 
 least  important  features  are  precluded.
 1
 https://www.kesci.com/apps/home/#!/competition/56cd5f02b89b5bd026cb39c9/content/0
-2 http://bbs.pkbigdata.com/static/348_detail.html
-3 http://bbs.pkbigdata.com/static/417_detail.html
+2 
+3 
 2.Configure.py
 Configure  sets  up  the  development  environment  for  the  following  files.
 3.Preprocessing.py
