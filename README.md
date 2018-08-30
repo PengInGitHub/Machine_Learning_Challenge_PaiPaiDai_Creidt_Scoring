@@ -1,5 +1,5 @@
 # Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring
-PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution  
+                                        PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution  
 
 This doc reveals how to implement my strategy for the mentioned Machine Learning challenge in python 3. Specifically this contest asks participants to predict if a user is going to default when she/he gets credit from PaiPaiDai, which is a leading online banking platform in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
 
