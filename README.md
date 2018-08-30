@@ -7,7 +7,7 @@ In overall, my strategy is to make use of ensemble learning methods. Especially 
 
 To note this strategy is highly dependent on the consistent distribution of the data, so it needs quite some discreet to implement this strategy on different tasks. Nontheless, this approach helps to combat imbalanced data, because XGB are inclined to misclassify instances that locate close to the classification boundry. This problem would be severe in the situation of imbalanced data, because it indicates many cases would be locating near the classification boundry, fancy ensemble-tree methods would suffer from that. In this sense it is nice to try out this strategy.
 
-In order to replicate and (if possible) improve my solution, firstly you need to execute the given files by their order, the first five docs are individual scripts, you could run them seperately. In the next step run the rest files together, because the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
+In order to replicate and (if possible) improve my solution, firstly you need to execute the given files by their order, the first five docs are individual scripts, you could run them seperately. In the next step run the rest files together, because the 6th to the 13th file consist of an automatic machine learning pipeline, the main func is in run.py.  
 
 Part I: Data Wrangling 
 
