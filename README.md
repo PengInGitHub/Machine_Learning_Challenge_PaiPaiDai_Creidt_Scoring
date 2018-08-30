@@ -39,7 +39,7 @@ Preprocessing.py.
 Ahead of modeling, processed data is selected in this section. Features that have low
 variance  or  high  correlation  with  other  features  are  excluded.  
 
-Part II: Machine Learning Pipiline    
+Part II: Machine Learning Pipiline      
 The following files are in charge of modelling. As can be seen from the diagram below,
 modeling consists of three steps: firstly, a couple of **base models** from LR to XGB are used
 to fit the training data. Afterwards in step two, samples that are suspicious to be
@@ -50,8 +50,8 @@ hold out  will  be  used  as  final  prediction  to  submit.
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/modelling.png)
 
 6.run.py  
-Thanks to the prepared data via the first five steps, method of level_one_wrapper, which is
-Level  One  Model  Fitting  in  the  chart  above,  is  to  fit  the  data  via  a  bunch  of  algorithms.
+Thanks to the prepared data via the first five steps, method of level_one_wrapper, which is Level  One  Model  Fitting  in  the  chart  above,  is  to  fit  the  data  via  a  bunch  of  algorithms.
+
 7.BBM_DBM.py  
 BBM_DBM reads the results of level_one_wrapper and tells which algorithm is the single
 best base model (BBM) based on the average AUC via 5­fold CV. Additionally it indicates
