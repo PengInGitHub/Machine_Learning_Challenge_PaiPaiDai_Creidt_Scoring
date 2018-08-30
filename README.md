@@ -5,7 +5,8 @@ This doc reveals how to implement my strategy for the Machine Learning challenge
 
 In order to replicate and (if possible) improve my solution, firstly you need to execute the given files by their order, the first five docs are individual scripts, you could run them seperately. Next the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
 
-Part I: Data Wrangling  
+Part I: Data Wrangling 
+
 The  chart  provides  an  overview  of data  preparation, which  is  the  task  of  the  first  five  scripts.
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/data_preparation.png)
 
@@ -39,7 +40,8 @@ Preprocessing.py.
 Ahead of modeling, processed data is selected in this section. Features that have low
 variance  or  high  correlation  with  other  features  are  excluded.  
 
-Part II: Machine Learning Pipiline      
+Part II: Machine Learning Pipiline  
+
 The following files are in charge of modelling. As can be seen from the diagram below,
 modeling consists of three steps: firstly, a couple of **base models** from LR to XGB are used
 to fit the training data. Afterwards in step two, samples that are suspicious to be
@@ -60,22 +62,24 @@ among all base models. Samples have high positive values in the difference betwe
 Ranking_BBM and Ranking_DBM (Ranking_BBM­Ranking_DBM) are highly supposed
 to be misclassified by BBM (normally XGBoost) but more accurately evaluated by DBM
 (in  general  a  linear  model).  
+
 8.load_train_data.py  
 load_train_data plots the ranking difference of instances between BBM and DBM so as to
 determine  the  subsamples  for  level  two  model  fitting.  
-9.run.py    ­  level_two_wrapper
+
+9.run.py  
 On the selected samples from the last step, the model DBM_Sub is fitted, which is linear
 model in Level Two Model Fitting. This model gives more accurate evaluations on the
 chosen  data  than  BBM.
-10.run.py    ­  level_one_predict
-The  models  fitted  in  level_one_wrapper  are  used  to  fit  the  hold­out  test.
-11.run.py    ­  level_two_predict
-The  outputs  of  level_one_predict  are  used  as  inputs  to  fit  a  normal  stacking  model.
-12.local_predit_verrify_tune_final.py  
+10.level_one_predict.py
+The  models  fitted  in  level_one_wrapper  are  used  to  fit  the  hold out  test.
+11.level_two_predict.py  
+The  outputs  of  level_one_predict  are  used  as  inputs  to  fit  a  normal  stacking  model. 
+
+12.local_predit_verrify_tune_final.py    
 Tune optimal values of three parameters: L, intervales, the lowest ranking difference for
 Strategy One and Strategy Two of parameter tuning are verified respectively, based on the
 observed  data  for  the  unseen  data.  
-13.local_predit_verrify.py
-The optimal values of parameters from the last step are tested in the hold­out data set in
-this step. Comparing BBM_Holdout, Stacking_Holdout and the model depicted above, the
-model  of  the  three  has  the  highest  hold­out  AUC  will  be  used  as  final  prediction  to  submit.
+
+13.local_predit_verrify.py  
+The optimal values of parameters from the last step are tested in the hold­out data set in this step. Comparing BBM_Holdout, Stacking_Holdout and the model depicted above, the model  of  the  three  has  the  highest  hold­out  AUC  will  be  used  as  final  prediction  to  submit.
