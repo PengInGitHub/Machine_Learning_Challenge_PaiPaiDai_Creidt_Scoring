@@ -1,15 +1,15 @@
 # Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring
 PaiPaiDai(拍拍贷) Loan Default Prediction Contest Solution  
 
-This doc reveals how to implement my strategy for the Machine Learning challenge in python 3. Specifically this contest asks participants to predict if a user is going to default when she/he gets credit from PaiPaiDai, which is a leadning online banking platform and a Fintech super star in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
+This doc reveals how to implement my strategy for the Machine Learning challenge in python 3. Specifically this contest asks participants to predict if a user is going to default when she/he gets credit from PaiPaiDai, which is a leading online banking platform and a Fintech super star in China. To note, the excellent solutions of [the player Wepe](http://bbs.pkbigdata.com/static/348_detail.html) and [the team TNT_000](http://bbs.pkbigdata.com/static/417_detail.html) are referenced.  
 
-In order to replicate and (if possible) improve my solution, firstly you could execute the given files by their order, the first five docs are individual scripts, you could run them seperately. Next the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
+In order to replicate and (if possible) improve my solution, firstly you need to execute the given files by their order, the first five docs are individual scripts, you could run them seperately. Next the 6th to the 13th file consist of an automatic machine learning pipiline, the main func is in run.py.  
 
-The  chart  provides  an  overview  of  data  preparation,which  is  the  task  of  the  first  five  scripts.
+The  chart  provides  an  overview  of course data  preparation, which  is  the  task  of  the  first  five  scripts.
 ![alt text](https://github.com/PengInGitHub/Machine_Learning_Challenge_PaiPaiDai_Creidt_Scoring/blob/master/data_preparation.png)
 
-1.ppd_solution.py
-ppd_solution.py generates all statistical features extracted from raw data. Firstly, statistical
+1.ppd_solution.py  
+Dhis doc generates all statistical features extracted from raw data. Firstly, statistical
 features concerning missing values: the count of missing value per user, ranking of the
 user’s count of missing value in the column and the discretized ranking value are recorded
 into three features. Secondly, concerning numeric variables, each column is ranked based
